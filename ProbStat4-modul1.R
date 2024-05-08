@@ -1,6 +1,6 @@
 view(rombon)
 str(rombon)
-rombon$volume <- as.numeric(gsub(",", "", rombon$volume))
+rombon$Volume <- as.numeric(gsub(",", "", rombon$Volume))
 mean(rombon$Volume, na.rm = TRUE)
 t.test(rombon$Volume, mu=10)
 
